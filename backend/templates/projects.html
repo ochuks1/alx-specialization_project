@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-</head>
-<body>
-    <h1>Subsea Projects</h1>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/pipelines">Pipelines</a></li>
-        </ul>
-    </nav>
-    <div id="projects-list">
-        {% for project in projects %}
-            <p>Project Name: {{ project[1] }}</p> <!-- Adjust index based on your table structure -->
-        {% endfor %}
-    </div>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Projects</h2>
+<ul>
+    {% for project in projects %}
+    <li>
+        <h3>{{ ALX pproject }}</h3>
+        <p>{{ ALX project based on subsea }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
